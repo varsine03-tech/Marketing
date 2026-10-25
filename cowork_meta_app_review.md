@@ -47,11 +47,13 @@ If a permission says "make a test API call first", tell Varsine to write to Clau
 
 Use these answers (English):
 
+> ⚠️ UPDATE (October 2026): the bot now answers automatically. If a request was already submitted with the old text ("nothing is sent until she presses Send"), tell Varsine before changing anything — the description must match how the app really works.
+
 **How will your app use this permission? (pages_messaging / instagram_manage_messages)**
-> This is a private tool used only by the owner of the Page "BRAND" to manage her own business inbox. When a customer sends a message to our Page/Instagram account, the app reads the conversation and prepares a reply draft in the owner's writing style. The draft is shown to the owner in a private Telegram chat; nothing is sent until she presses "Send". We only reply within the 24-hour messaging window, only to people who wrote to us first. No marketing broadcasts, no messages to people who have not contacted us.
+> This is a private tool used only by AI Mard (aimard.net), an Armenian AI-education business, to manage its own Page and Instagram inbox. When a person sends a message to our Page or Instagram account, the app replies within the 24-hour window, only to people who wrote to us first. Replies use only facts from a knowledge document maintained by the business owner (courses, dates, prices, registration link). If the question is not covered, or the person wants to pay, asks for a discount, complains, proposes a partnership or asks for a human, the app sends a short holding message, stops replying in that conversation and hands it over to the owner in a private Telegram chat. If the owner replies manually, the app stays silent in that conversation. The app never sends broadcasts or promotional messages, never contacts people who did not write to us, limits itself to 15 replies per conversation per day, tells people honestly that it is an AI assistant when asked, and deletes a person's data when they send "DELETE".
 
 **instagram_manage_comments**
-> Our posts ask readers to comment a keyword (for example "ՀՐԱՀԱՆԳ") to receive a free step-by-step guide (PDF). The app reads comments on our own posts, detects the keyword and sends one private reply with the guide link to that commenter. It does not read or reply to comments on other accounts' content.
+> Our posts ask readers to comment a keyword (for example "ԱԳԵՆՏ") to receive a free step-by-step guide (PDF). The app reads comments on our own posts only, sends one private reply with the guide link to the commenter, and posts a short public reply ("Sent to your Direct 📩"). Simple questions in comments get a short public answer inviting the person to Direct. Negative or spam comments are not answered automatically — they are reported to the owner. It never comments on other accounts' content.
 
 **pages_manage_metadata**
 > Used to subscribe our own Page to webhooks (messages, comments) so the app is notified about new messages and comments on our Page.
@@ -60,11 +62,11 @@ Use these answers (English):
 > Used to read our own Page and Instagram account information, posts and comments so the app can match comments and messages to the right post and guide.
 
 **Screencast (1–2 min, record the screen, no sound needed)** — show:
-1. A test Instagram account sends a Direct message to @BRAND_IG.
-2. The Telegram bot shows the reply draft with buttons ✅ Send / ✏️ Edit.
-3. The owner presses ✅ Send; the reply appears in the Instagram conversation.
-4. A test account comments the keyword under a post; the guide link arrives in its Direct.
-(Varsine will get the working demo from Claude Code before recording. If it is not ready, stop and tell her.)
+1. A test account sends a Direct message to @ai.mard_ (e.g. "When does the next course start?"); the app answers automatically within ~2 minutes with the date from the knowledge document.
+2. The test account writes "I want to register, how do I pay?"; the app sends the registration link and a holding message, and the owner's Telegram shows the hand-over card ("🔥 Ready to register") with the conversation; the owner answers manually.
+3. The test account comments the keyword under a post; the guide link arrives in its Direct and a short public reply appears under the comment.
+4. The test account sends "DELETE"; the app confirms deletion.
+(Use the Varsine Hovhannisyan account as the test account; both accounts are managed by the same owner. If something does not work during recording, stop and tell Varsine.)
 
 Before pressing **Submit for review**, show Varsine a summary and ask «Ուղարկե՞մ»։ After submitting, tell her: review usually takes 1–5 business days; if Meta rejects, copy the reason and give it to Claude Code.
 
